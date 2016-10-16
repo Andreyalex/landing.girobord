@@ -39,13 +39,13 @@ h6 {
     margin-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/room-bg.jpg) no-repeat center center;
+    background: url(../img/boy-autumn-bg.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .intro-message {
     position: relative;
-    padding-top: 20%;
+    padding-top: 15%;
     padding-bottom: 20%;
 }
 
@@ -62,13 +62,19 @@ h6 {
     font-weight: lighter;
 }
 
+.intro-message > h4 {
+    font-family: "Exo 2",sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+}
+
 .intro-divider {
     width: 400px;
     border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
-.intro-message > h3 {
+.intro-message > h3, .intro-message > h4 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
