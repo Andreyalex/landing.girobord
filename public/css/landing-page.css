@@ -67,8 +67,6 @@ h2 {
 
 .intro-message {
     position: relative;
-    padding-top: 15%;
-    padding-bottom: 20%;
 }
 
 .intro-message > h1 {
@@ -96,32 +94,12 @@ h2 {
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
-.intro-message > h3, .intro-message > h4 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+.intro-message h1 {
+    padding-top: 200px;
 }
 
-@media(max-width:767px) {
-    .intro-message {
-        padding-bottom: 15%;
-    }
-
-    .intro-message > h1 {
-        font-size: 3em;
-    }
-
-    ul.intro-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.intro-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
-
-    .intro-divider {
-        width: 100%;
-    }
+.intro-message > h3, .intro-message > h4 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
 .network-name {
@@ -182,6 +160,30 @@ h2 {
 }
 
 @media(max-width:767px) {
+
+    .intro-message > h1 {
+
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+
+    .intro-message h1 {
+        font-size: 3em;
+        padding-top: 130px;
+    }
+
     .banner h2 {
         margin: 0;
         text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
