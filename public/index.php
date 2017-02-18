@@ -1,3 +1,12 @@
+<?php
+
+    $common = (object) [
+        'phone' => '(068)069-41-84',
+        'address' => 'г.Харьков, ул. Сумская, 126'
+    ];
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,9 +44,12 @@
 
 
 
+    <div style="position: absolute; padding: 10px;">
+        <img src="img/logo.png" style="width:200px;">
+    </div>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default transparent navbar-fixed-top topnav" role="navigation">
+    <nav class="navbar navbar-default ontop navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -52,13 +64,19 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#about">Акции</a>
+                        <a href="#discounts">Акции</a>
                     </li>
                     <li>
-                        <a href="#services">Предложения</a>
+                        <a href="#rent">Прокат</a>
                     </li>
                     <li>
-                        <a href="#contact">Контакты</a>
+                        <a href="#service">Ремонт</a>
+                    </li>
+                    <li>
+                        <a href="#shop">Продажа</a>
+                    </li>
+                    <li>
+                        <a href="#contacts">Контакты</a>
                     </li>
                 </ul>
             </div>
@@ -76,134 +94,126 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="intro-message">
-                            <h1>GIROB<span class="fa fa-play-circle-o"></span>RD</h1>
-                            <h3>Твой персональный электротранспорт</h3>
+                            <h1>GIROB<span class="fa fa-play-circle-o"></span>ARD</h1>
+                            <h3>Заряжайся и жги!</h3>
                             <hr class="intro-divider">
-                            <ul class="list-inline intro-social-buttons col-md-4 col-md-offset-4">
-                                <li class="faded-in-1 col-xs-6" style="opacity:0">
-                                    <a href="https://instagram.com/cutcort" target="_blank" class="btn btn-default btn-lg btn-social btn-block">
-                                        <i class="fa fa-instagram fa-fw"></i>
-                                    </a>
-                                </li>
-                                <li class="faded-in-1 col-xs-6" style="opacity:0">
+                            <h4>Прокат, ремонт, продажа мини-электротранспорта</h4>
+                            <ul class="list-inline intro-social-buttons col-md-2 col-md-offset-5">
+                                <li class="faded-in-1 col-xs-12" style="opacity:0">
                                     <a href="https://vk.com/girobord" target="_blank" class="col-xs-6 btn btn-default btn-lg btn-social btn-block">
                                         <i class="fa fa-vk fa-fw"></i>
                                     </a>
                                 </li>
                             </ul>
                             <div style="clear:both; height:60px"></div>
-                            <h4>Прокат, продажа гироскутеров, мини-сигвеев</h4>
                             <span style="position:absolute;bottom:0px;left:40%;width:20%;font-size:150px;opacity:0.5" class="fa fa-angle-down"></span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- /.container -->
     </div>
-    <!-- /.intro-header -->
 
-    <!-- Page Content -->
-
-    <a  name="action"></a>
-    <div class="content-section-b">
-
-
+    <!-- Key concept -->
+    <div class="jumbotron">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                <div class="col-lg-12">
+                    <h1>Заряжайся и жги!</h1>
+                    <br/>
+                    <p class="lead">
+                        Компания Giroboard предоставляет услуги по прокату, ремонту и продаже различных видов современного электрического транспорта. Мы следим за новинками на рынке и стремимся предложить клиентам самые актуальные и интересные транспортные средства. Наши профессиональные инструктора быстро обучат любого управлять гироскутером, электросамокатом, моноколесом и др. Особое внимание мы уделяем безопасности, поэтому предлагаем катающимся бесплатно использовать наши средства защиты во время езды. Мы прислушиваемся к пожеланиям и наблюдениям клиентов, регулярно проводим техосмотр и ремонт транспортных средств.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <a name="discounts" class="anchor"></a>
+    <div class="content-section-b">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-lg-push-6">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Акция "Теплые покатушки"</h2>
                     <p class="lead">
                         Прокат. Нужен текст.
                     </p>
                 </div>
-                <div class="col-lg-5 col-sm-pull-6 col-sm-6">
+                <div class="col-lg-5 col-lg-pull-6">
                     <img class="img-responsive" src="img/action1.png" alt="">
                 </div>
             </div>
         </div>
-        <!-- /.container -->
-
     </div>
-    <!-- /.content-section-a -->
 
 
-	<a  name="services"></a>
+    <a name="rent" class="anchor"></a>
     <div class="content-section-a">
-
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
+                <div class="col-lg-5">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Прогулки с друзьями и близкими</h2>
+                    <h2 class="section-heading">Прокат</h2>
                     <p class="lead">
-                        Прокат. Нужен текст.
+                        Прогулки с друзьями и близкими
                     </p>
                 </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <div class="col-lg-5 col-lg-offset-2">
                     <!--<div style="position:absolute;height:100%;width:100%" class="border-smooth"></div>-->
                     <img class="img-responsive" src="media/board-walk3.jpg" alt="">
                 </div>
             </div>
-
         </div>
-        <!-- /.container -->
-
     </div>
-    <!-- /.content-section-a -->
 
+
+    <a name="service" class="anchor"></a>
     <div class="content-section-b">
-
         <div class="container">
-
             <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
+                <div class="col-lg-5 col-lg-offset-1 col-lg-push-6">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Продажа. Нужен слоган</h2>
-                    <p class="lead">Продажа. Нужен текст</p>
+                    <h2 class="section-heading">Ремонт</h2>
+                    <p class="lead">Многие владельцы гироскутеров и другого электрического транспорта рано или поздно сталкиваются с проблемами обслуживания и ремонта их технического средства.
+                        Имея немалый опыт в обслуживании и ремонте собственных электрогаджетов, компания Giroboard, по просьбам клиентов, с этого года предоставляет услуги квалифицированных специалистов по ремонту электрических средств передвижения. Гиротранспорт - новое направление в электронике, освоенное, на данный момент, далеко не каждым специалистом по ремонту, поэтому очень важно найти мастера, разбирающегося именно в гиротехнике. Обращаясь к нам, вы можете быть уверены, что доверяете свой мини-транспорт рукам профессионалов.
+                        Сервисный центр расположен по адресу <?=$common->address?>, телефон <?=$common->phone?></p>
                 </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="media/board-sale.jpg" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-b -->
-
-    <div class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Праздники и мероприятия</h2>
-                    <p class="lead">Праздники и мероприятия.</p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <div class="col-lg-5 col-lg-pull-6">
                     <img class="img-responsive" src="img/phones.png" alt="">
                 </div>
             </div>
-
         </div>
-        <!-- /.container -->
-
     </div>
-    <!-- /.content-section-a -->
 
-	<a  name="contact"></a>
-    <div class="banner">
+
+    <a name="shop" class="anchor"></a>
+    <div class="content-section-a">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <h2>Контакты</h2>
+                <div class="col-lg-5">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Продажа</h2>
+                    <p class="lead">У нас вы можете попробовать, выбрать и заказать электротранспорт для личного пользования. Наши менеджеры с удовольствием помогут подобрать подходящий вариант электрогаджета, удовлетворяющий вашим требованиям, техническим характеристикам и финансовым возможностям. На весь приобретенный у нас электротранспорт предоставляется гарантийный ремонт и обслуживание.
+                        Консультирование и оформление заказа по тел: <?=$common->phone?></p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2">
+                    <img class="img-responsive" src="media/board-sale.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <a  name="contacts" class="anchor"></a>
+    <div class="content-section-b">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-lg-push-6">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Контакты</h2>
                 </div>
                 <div class="col-lg-6">
                     <ul class="list-inline banner-social-buttons">
@@ -216,11 +226,8 @@
                     </ul>
                 </div>
             </div>
-
         </div>
-        <!-- /.container -->
     </div>
-    <!-- /.banner -->
 
     <!-- Footer -->
     <footer>
@@ -266,6 +273,20 @@
                 $('.faded-in-1').animate({opacity:1});
             }, 1000);
         })
+
+        $(window).scroll(function() {
+            toggleNavbar();
+        });
+
+        var toggleNavbar = function () {
+            var scroll = document.body.scrollTop;
+            if (scroll < 160) {
+                $('.navbar-default').addClass('ontop');
+            } else {
+                $('.navbar-default').removeClass('ontop');
+            }
+        }
+        toggleNavbar();
     </script>
 
 </body>

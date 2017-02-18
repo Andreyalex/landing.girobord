@@ -37,20 +37,32 @@ h2 {
     font-weight: 400;
 }
 
-.navbar-default.transparent {
+.navbar {
+    min-height: 56px;
+}
+
+.navbar-default {
+    border: #000;
+    background: #333;
+}
+
+.navbar-default.ontop {
     border: transparent;
     background: transparent;
 }
 
-.navbar-default.transparent .navbar-nav>li>a {
-    color: #f8f8f8;
+.navbar-default .navbar-nav>li>a {
     font-family: "Exo 2",sans-serif;
     font-size: 20px;
     font-weight: lighter;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
-.navbar-default.transparent .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav>li>a {
+    color: #f8f8f8;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
     color: #e8e8e8;
 }
 
@@ -110,14 +122,17 @@ h2 {
     letter-spacing: 2px;
 }
 
+.jumbotron {
+    border-bottom: 1px solid #e7e7e7;
+}
+
 .content-section-a {
-    padding: 50px 0;
+    padding: 20px 0 50px;
     background-color: #f8f8f8;
 }
 
 .content-section-b {
-    padding: 50px 0;
-    border-top: 1px solid #e7e7e7;
+    padding: 20px 0 50px;
     border-bottom: 1px solid #e7e7e7;
 }
 
@@ -219,4 +234,10 @@ p.copyright {
 
 .content-section-a .border-smooth {
     box-shadow: inset 0px 0px 45px 45px rgba(248,248,248,1);
+}
+
+.anchor {
+    position: relative;
+    top: -50px;
+    float: left;
 }
