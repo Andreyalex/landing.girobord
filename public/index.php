@@ -1,9 +1,12 @@
 <?php
 
     $common = (object) [
-        'phone' => '(068)069-41-84',
-        'address' => 'г.Харьков, ул. Сумская, 126'
+        'phone' => '(068) 069-41-84',
+        'address' => 'г.Харьков, ул. Ололоева, 100500'
     ];
+
+
+    $discounts = false;
 ?>
 
 
@@ -28,7 +31,7 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -63,9 +66,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                    <?php if ($discounts) { ?>
                     <li>
                         <a href="#discounts">Акции</a>
                     </li>
+                    <?php } ?>
                     <li>
                         <a href="#rent">Прокат</a>
                     </li>
@@ -130,47 +135,50 @@
     </div>
 
 
+    <?php if ($discounts) { ?>
     <a name="discounts" class="anchor"></a>
-    <div class="content-section-b">
+    <div class="content-section content-section-b">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-lg-push-6">
+                <div class="col-lg-6 col-lg-push-6">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Акция "Теплые покатушки"</h2>
+                    <h1 class="section-heading">Акция "Теплые покатушки"</h1>
                     <p class="lead">
                         Прокат. Нужен текст.
                     </p>
                 </div>
-                <div class="col-lg-5 col-lg-pull-6">
+                <div class="col-lg-6 col-lg-pull-6">
                     <img class="img-responsive" src="img/action1.png" alt="">
                 </div>
             </div>
         </div>
     </div>
+    <?php } ?>
 
 
     <a name="rent" class="anchor"></a>
-    <div class="content-section-a">
+    <div class="content-section content-section-a">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-6">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Прокат</h2>
                     <p class="lead">
                         Кто не любит веселые покатушки днем с ветерком в хорошей компании или спокойно вечером проехаться по уставшему от дневной суеты центру Харькова, любуясь закатом над Госпромом?... Кто еще не пробовал разнообразить свидание катанием на гиробордах или не дарил другу сертификат на прокат гироскутра? А корпоративы с соревнованием на различном гиротранспорте или дни рождения с веселыми заданиями на электросамокатах вы тоже ещё не отмечали ?
-                        Если вы чего-то из этого ещё не пробовали, советуем поспешить к нам, дабы разнообразить досуг интересными покатушками и современными технологиями!
-
-                        Помимо различных гироскутеров, пункт проката Giroboard предоставляет клиентам возможность:
-                        - освоить чудеса эквилибристики, научившись держать равновесие и кататься на моноколесе;
-                        - погонять на электросамокатах;
-                        - ощутить, как "плывет" асфальт под электроскейтом
-
-                        Главное, заранее бронируйте время катания и не забывайте застегивать ремни на наколенниках, налодонниках, налокотниках и шлеме!
-
-                        Кстати, защиту мы выдаем бесплатно.
-                        Забронировать средство и время катания можно по тел: <nobr><?=$common->phone?></nobr></p>
+                        Если вы чего-то из этого ещё не пробовали, советуем поспешить к нам, дабы разнообразить досуг интересными покатушками и современными технологиями!<br/>
+                        <br/>
+                        Помимо различных гироскутеров, пункт проката Giroboard предоставляет клиентам возможность:<br/>
+                        - освоить чудеса эквилибристики, научившись держать равновесие и кататься на моноколесе;<br/>
+                        - погонять на электросамокатах;<br/>
+                        - ощутить, как "плывет" асфальт под электроскейтом<br/>
+                        <br/>
+                        Главное, заранее бронируйте время катания и не забывайте застегивать ремни на наколенниках, налодонниках, налокотниках и шлеме!<br/>
+                        <br/>
+                        Кстати, защиту мы выдаем бесплатно.<br/>
+                        Забронировать средство и время катания можно по тел: <nobr><?=$common->phone?></nobr>
+                    </p>
                 </div>
-                <div class="col-lg-5 col-lg-offset-2">
+                <div class="col-lg-6">
                     <!--<div style="position:absolute;height:100%;width:100%" class="border-smooth"></div>-->
                     <img class="img-responsive" src="media/board-walk3.jpg" alt="">
                 </div>
@@ -180,17 +188,19 @@
 
 
     <a name="service" class="anchor"></a>
-    <div class="content-section-b">
+    <div class="content-section content-section-b">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-lg-push-6">
+                <div class="col-lg-6 col-lg-push-6">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Ремонт</h2>
-                    <p class="lead">Многие владельцы гироскутеров и другого электрического транспорта рано или поздно сталкиваются с проблемами обслуживания и ремонта их технического средства.
-                        Имея немалый опыт в обслуживании и ремонте собственных электрогаджетов, компания Giroboard, по просьбам клиентов, с этого года предоставляет услуги квалифицированных специалистов по ремонту электрических средств передвижения. Гиротранспорт - новое направление в электронике, освоенное, на данный момент, далеко не каждым специалистом по ремонту, поэтому очень важно найти мастера, разбирающегося именно в гиротехнике. Обращаясь к нам, вы можете быть уверены, что доверяете свой мини-транспорт рукам профессионалов.
-                        Сервисный центр расположен по адресу <?=$common->address?>, телефон <?=$common->phone?></p>
+                    <p class="lead">
+                        Многие владельцы гироскутеров и другого электрического транспорта рано или поздно сталкиваются с проблемами обслуживания и ремонта их технического средства.<br/>
+                        Имея немалый опыт в обслуживании и ремонте собственных электрогаджетов, компания Giroboard, по просьбам клиентов, с этого года предоставляет услуги квалифицированных специалистов по ремонту электрических средств передвижения. Гиротранспорт - новое направление в электронике, освоенное, на данный момент, далеко не каждым специалистом по ремонту, поэтому очень важно найти мастера, разбирающегося именно в гиротехнике. Обращаясь к нам, вы можете быть уверены, что доверяете свой мини-транспорт рукам профессионалов.<br/>
+                        Сервисный центр расположен по адресу <?=$common->address?>, телефон <?=$common->phone?>
+                    </p>
                 </div>
-                <div class="col-lg-5 col-lg-pull-6">
+                <div class="col-lg-6 col-lg-pull-6">
                     <img class="img-responsive" src="img/phones.png" alt="">
                 </div>
             </div>
@@ -199,16 +209,18 @@
 
 
     <a name="shop" class="anchor"></a>
-    <div class="content-section-a">
+    <div class="content-section content-section-a">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-6">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Продажа</h2>
-                    <p class="lead">У нас вы можете попробовать, выбрать и заказать электротранспорт для личного пользования. Наши менеджеры с удовольствием помогут подобрать подходящий вариант электрогаджета, удовлетворяющий вашим требованиям, техническим характеристикам и финансовым возможностям. На весь приобретенный у нас электротранспорт предоставляется гарантийный ремонт и обслуживание.
-                        Консультирование и оформление заказа по тел: <?=$common->phone?></p>
+                    <p class="lead">
+                        У нас вы можете попробовать, выбрать и заказать электротранспорт для личного пользования. Наши менеджеры с удовольствием помогут подобрать подходящий вариант электрогаджета, удовлетворяющий вашим требованиям, техническим характеристикам и финансовым возможностям. На весь приобретенный электротранспорт предоставляется гарантийный ремонт и обслуживание.<br/>
+                        Консультирование и оформление заказа по тел: <?=$common->phone?>
+                    </p>
                 </div>
-                <div class="col-lg-5 col-lg-offset-2">
+                <div class="col-lg-6">
                     <img class="img-responsive" src="media/board-sale.png" alt="">
                 </div>
             </div>
@@ -218,22 +230,46 @@
 
 
     <a  name="contacts" class="anchor"></a>
-    <div class="content-section-b">
-        <div class="container">
+    <div class="content-section content-section-b">
+        <div class="container container-contacts">
             <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-lg-push-6">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Контакты</h2>
+                <h2 class="text-center section-heading">Контакты</h2>
+                <div class="col-lg-4 text-center">
+                    <div class="icon"><i class="glyphicon glyphicon-earphone" style="color: #8e8;"></i></div>
+                    <span class="description"><?=$common->phone?></span>
                 </div>
-                <div class="col-lg-6">
-                    <ul class="list-inline banner-social-buttons">
-                        <li>
-                            <a href="https://vk.com/girobord" target="_blank" class="btn btn-default btn-lg">
-                                <i class="fa fa-vk fa-fw"></i>
-                                <span class="network-name">VK</span>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="col-lg-4 text-center">
+                    <div class="icon"><i class="glyphicon glyphicon-map-marker" style="color: #e88;"></i></div>
+                    <span class="description"><?=$common->address?></span>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="icon"><i class="fa fa-vk fa-fw" style="color: #79c;"></i></div>
+                    <a class="description" href="https://vk.com/girobord" target="_blank">vk.com/girobord</a>
+                </div>
+            </div>
+            <div class="row">
+                <div id="map" style="width:600px; height: 400px; margin:20px auto">
+                    <script>
+
+                        function initMap() {
+                            var myLatLng = {lat: 49.940, lng: 36.373};
+
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                                zoom: 13,
+                                center: myLatLng
+                            });
+
+                            var marker = new google.maps.Marker({
+                                position: myLatLng,
+                                map: map,
+                                title: 'Giroboard'
+                            });
+                        }
+
+                    </script>
+                    <script async defer
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFD2w91PRhUqR0YBSl9XPdVMDSDo7A_Es&signed_in=true&callback=initMap"></script>
+<!--                    <iframe style="margin:auto" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10271.950409074874!2d36.3742445!3d49.9365739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1487628413036" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
                 </div>
             </div>
         </div>
@@ -248,17 +284,27 @@
                         <li>
                             <a href="#">Girodord</a>
                         </li>
+                        <?php if ($discounts) { ?>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#about">Акции</a>
+                            <a href="#discounts">Акции</a>
+                        </li>
+                        <?php } ?>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#rent">Прокат</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#services">Предложения</a>
+                            <a href="#service">Ремонт</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#contact">Контакты</a>
+                            <a href="#shop">Продажа</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#contacts">Контакты</a>
                         </li>
                     </ul>
                     <p class="copyright text-muted small">Copyright &copy; Girobord 2016. All Rights Reserved</p>

@@ -19,22 +19,23 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 h2 {
-    font-family: "Exo 2",sans-serif;
-    font-weight: lighter;
+    font-size: 32px;
+}
+
+a {
+    color: #333;
+}
+
+a:hover {
+    color: #666;
 }
 
 .topnav {
     font-size: 14px; 
-}
-
-.lead {
-    font-size: 18px;
-    font-weight: 400;
 }
 
 .navbar {
@@ -124,19 +125,20 @@ h2 {
 
 .jumbotron {
     border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 0;
+}
+
+.content-section {
+    border-bottom: 1px solid #e7e7e7;
+    padding: 40px 0;
 }
 
 .content-section-a {
-    padding: 20px 0 50px;
     background-color: #f8f8f8;
 }
 
-.content-section-b {
-    padding: 20px 0 50px;
-    border-bottom: 1px solid #e7e7e7;
-}
-
 .section-heading {
+    margin-top: 0px;
     margin-bottom: 30px;
 }
 
@@ -144,6 +146,13 @@ h2 {
     float: left;
     width: 200px;
     border-top: 3px solid #e7e7e7;
+}
+
+.content-section .lead {
+    font-family: "Roboto",sans-serif;
+    font-weight: 300;
+    font-size: 21px;
+    margin-bottom: 0;
 }
 
 .banner {
@@ -241,3 +250,12 @@ p.copyright {
     top: -50px;
     float: left;
 }
+
+.container-contacts .icon {
+    font-size: 36px;
+}
+
+.container-contacts .description {
+    font-size: 18px;
+}
+
