@@ -201,7 +201,7 @@
                     </p>
                 </div>
                 <div class="col-lg-6 col-lg-pull-6">
-                    <img class="img-responsive" src="img/phones.png" alt="">
+                    <img class="img-responsive" src="img/service.jpg" alt="">
                 </div>
             </div>
         </div>
