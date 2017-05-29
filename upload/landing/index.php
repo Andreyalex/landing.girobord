@@ -183,6 +183,8 @@
                 <div class="col-lg-6">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Прокат</h2>
+                    <!--<div style="position:absolute;height:100%;width:100%" class="border-smooth"></div>-->
+                    <img class="img-responsive" src="<?=$landingBaseUri?>/media/board-walk3.jpg" alt="">
                     <p class="lead">
                         Кто не любит веселые покатушки днем с ветерком в хорошей компании или спокойно вечером проехаться по уставшему от дневной суеты центру Харькова, любуясь закатом над Госпромом?... Кто еще не пробовал разнообразить свидание катанием на гиробордах или не дарил другу сертификат на прокат гироскутра? А корпоративы с соревнованием на различном гиротранспорте или дни рождения с веселыми заданиями на электросамокатах вы тоже ещё не отмечали ?
                         Если вы чего-то из этого ещё не пробовали, советуем поспешить к нам, дабы разнообразить досуг интересными покатушками и современными технологиями!<br/>
@@ -198,10 +200,147 @@
                         Забронировать средство и время катания можно по тел:<br/>
                         <i style="color:#8e8" class="glyphicon glyphicon-earphone"></i>&nbsp;<nobr><b><?=$common->phone?></b></nobr>
                     </p>
+
+
                 </div>
                 <div class="col-lg-6">
-                    <!--<div style="position:absolute;height:100%;width:100%" class="border-smooth"></div>-->
-                    <img class="img-responsive" src="<?=$landingBaseUri?>/media/board-walk3.jpg" alt="">
+                    <div class="rent-item">
+                        <div class="row">
+                            <div class="col-lg-4 text-center">
+                                <img class="img-responsive" src="<?=$landingBaseUri?>/img/rent/giroboard6.png" alt="">
+                                <p>Гироборд с диаметром колес 6,5 дюймов</p>
+                            </div>
+                            <div class="col-lg-8">
+                                <table class="table rent-item-prices">
+                                    <tr><td>5мин</td><td class="text-right"><span class="badge">30грн</span></td></tr>
+                                    <tr><td>15мин</td><td class="text-right"><span class="badge">55грн</span></td></tr>
+                                    <tr><td>30мин</td><td class="text-right"><span class="badge">95грн</span></td></tr>
+                                    <tr><td>1час</td><td class="text-right"><span class="badge">180грн</span></td></tr>
+                                    <tr><td>2 часа или до полного разряда*</td><td class="text-right"><span class="badge">320грн</span></td></tr>
+                                </table>
+                            </div>
+                        </div>
+                        <small><em>* в зависимости от веса катающегося, заряда батареи иногда хватает чуть меньше, чем на 2 часа</em></small>
+                    </div>
+
+                    <div class="rent-item">
+                        <div class="row">
+                            <div class="col-lg-4 text-center">
+                                <img class="img-responsive" src="<?=$landingBaseUri?>/img/rent/giroboard10.png" alt="">
+                                <p>Гироборд с диаметром колес 10 дюймов</p>
+                            </div>
+                            <div class="col-lg-8">
+                                <table class="table rent-item-prices">
+                                    <tr><td>5мин</td><td class="text-right"><span class="badge">45грн</span></td></tr>
+                                    <tr><td>15мин</td><td class="text-right"><span class="badge">65грн</span></td></tr>
+                                    <tr><td>30мин</td><td class="text-right"><span class="badge">110грн</span></td></tr>
+                                    <tr><td>1час</td><td class="text-right"><span class="badge">210грн</span></td></tr>
+                                    <tr><td>2 часа или до полного разряда*</td><td class="text-right"><span class="badge">380грн</span></td></tr>
+                                </table>
+                            </div>
+                        </div>
+                        <small><em>* в зависимости от веса катающегося, заряда батареи иногда хватает чуть меньше, чем на 2 часа</em></small>
+                    </div>
+
+                    <div class="rent-item">
+                        <div class="row">
+                            <div class="col-lg-4 text-center">
+                                <img class="img-responsive" src="<?=$landingBaseUri?>/img/rent/monowheel.png" alt="">
+                                <p>Моноколесо</p>
+                            </div>
+                            <div class="col-lg-8">
+                                <table class="table rent-item-prices">
+                                    <tr><td>5мин</td><td class="text-right"><span class="badge">30грн</span></td></tr>
+                                    <tr><td>15мин</td><td class="text-right"><span class="badge">55грн</span></td></tr>
+                                    <tr><td>30мин</td><td class="text-right"><span class="badge">95грн</span></td></tr>
+                                    <tr><td>1час</td><td class="text-right"><span class="badge">180грн</span></td></tr>
+                                    <tr><td>2 часа или до полного разряда*</td><td class="text-right"><span class="badge">320грн</span></td></tr>
+                                </table>
+                            </div>
+                        </div>
+                        <small><em>* в зависимости от веса катающегося, заряда батареи иногда хватает чуть меньше, чем на 2 часа</em></small>
+                    </div>
+
+                    <div class="rent-item">
+                        <div class="row">
+                            <div class="col-lg-4 text-center">
+                                <img class="img-responsive" src="<?=$landingBaseUri?>/img/rent/samokat-old.png" alt="">
+                                <p>Электросамокат детский</p>
+                            </div>
+                            <div class="col-lg-8">
+                                <table class="table rent-item-prices">
+                                    <tr><td>5мин</td><td class="text-right"><span class="badge">40грн</span></td></tr>
+                                    <tr><td>15мин</td><td class="text-right"><span class="badge">65грн</span></td></tr>
+                                    <tr><td>30мин</td><td class="text-right"><span class="badge">90грн</span></td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rent-item">
+                        <div class="row">
+                            <div class="col-lg-4 text-center">
+                                <img class="img-responsive" src="<?=$landingBaseUri?>/img/rent/skate.png" alt="">
+                                <p>Гироскейт</p>
+                            </div>
+                            <div class="col-lg-8">
+                                <table class="table rent-item-prices">
+                                    <tr><td>5мин</td><td class="text-right"><span class="badge">45грн</span></td></tr>
+                                    <tr><td>15мин</td><td class="text-right"><span class="badge">90грн</span></td></tr>
+                                    <tr><td>30мин</td><td class="text-right"><span class="badge">150грн</span></td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rent-item">
+                        <div class="row">
+                            <div class="col-lg-4 text-center">
+                                <img class="img-responsive" src="<?=$landingBaseUri?>/img/rent/minisegway.png" alt="">
+                                <p>Мини-сигвей</p>
+                            </div>
+                            <div class="col-lg-8">
+                                <table class="table rent-item-prices">
+                                    <tr><td>15мин</td><td class="text-right"><span class="badge">80грн</span></td></tr>
+                                    <tr><td>30мин</td><td class="text-right"><span class="badge">150грн</span></td></tr>
+                                    <tr><td>1час</td><td class="text-right"><span class="badge">260грн</span></td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rent-item">
+                        <div class="row">
+                            <div class="col-lg-4 text-center">
+                                <img class="img-responsive" src="<?=$landingBaseUri?>/img/rent/samokat.png" alt="">
+                                <p>Электросамокат</p>
+                            </div>
+                            <div class="col-lg-8">
+                                <table class="table rent-item-prices">
+                                    <tr><td>5мин</td><td class="text-right"><span class="badge">50грн</span></td></tr>
+                                    <tr><td>15мин</td><td class="text-right"><span class="badge">80грн</span></td></tr>
+                                    <tr><td>30мин</td><td class="text-right"><span class="badge">150грн</span></td></tr>
+                                    <tr><td>1час</td><td class="text-right"><span class="badge">260грн</span></td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rent-item">
+                        <div class="row">
+                            <div class="col-lg-4 text-center">
+                                <img class="img-responsive" src="<?=$landingBaseUri?>/img/rent/hovercart.png" alt="">
+                                <p>Ховеркарт</p>
+                            </div>
+                            <div class="col-lg-8">
+                                <table class="table rent-item-prices">
+                                    <tr><td>15мин</td><td class="text-right"><span class="badge">75грн</span></td></tr>
+                                    <tr><td>30мин</td><td class="text-right"><span class="badge">130грн</span></td></tr>
+                                    <tr><td>1час</td><td class="text-right"><span class="badge">230грн</span></td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
